@@ -35,7 +35,7 @@ def launch(bot, module_name):
             message.edit(f.read())
 
         try:
-            response = subconscious.stream(prompt, subconscious)[:2048]
+            response = subconscious.stream(prompt, subconscious)
 
             message.edit('ㅤ\n<b><emoji id="5282843764451195532">🖥</emoji> Ответ от нейросети:</b>\n\n' + response + 'ㅤ')
         except Exception as e:
